@@ -94,6 +94,7 @@ func Provider() *schema.Provider {
 			"couchbase_security_user":       resourceSecurityUser(),
 			"couchbase_primary_query_index": resourcePrimaryQueryIndex(),
 			"couchbase_query_index":         resourceQueryIndex(),
+			"couchbase_build_index":         resourceBuildIndex(),
 		},
 
 		ConfigureContextFunc: providerConfigure,
